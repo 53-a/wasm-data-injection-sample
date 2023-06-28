@@ -1,0 +1,13 @@
+[package]
+name = "target-wasm"
+version = "0.1.0"
+edition = "2021"
+
+[package.metadata]
+wasm-opt = true
+wasm-name-section = false
+wasm-producers-section = false
+
+[dependencies]
+anyhow = "^1.0"
+

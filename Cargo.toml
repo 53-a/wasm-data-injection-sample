@@ -1,0 +1,17 @@
+[package]
+name = "wasm-data-injection-sample"
+version = "0.1.0"
+edition = "2021"
+
+[package.metadata]
+wasm-opt = true
+wasm-name-section = false
+wasm-producers-section = false
+
+[workspace]
+members = ['crates/*']
+
+[dependencies]
+walrus = "^0.20"
+anyhow = "^1.0"
+clap = { version = "^4.3", features = ["derive"] }
